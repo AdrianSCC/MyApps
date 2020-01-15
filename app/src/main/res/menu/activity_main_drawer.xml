@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_noticias"
+            android:icon="@drawable/ic_menu_noticias"
+            android:title="@string/menu_noticias" />
+        <item
+            android:id="@+id/nav_juegos"
+            android:icon="@drawable/ic_juegos"
+            android:title="@string/menu_juegos" />
+        <item
+            android:id="@+id/nav_fotos"
+            android:icon="@drawable/ic_fotos"
+            android:title="@string/menu_fotos" />
+        <item
+            android:id="@+id/nav_musica"
+            android:icon="@drawable/ic_musica"
+            android:title="@string/menu_musica" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/ic_video"
+            android:title="@string/menu_video" />
+        <item
+            android:id="@+id/nav_sensores"
+            android:icon="@drawable/ic_sensores"
+            android:title="@string/menu_sensores" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contacto"
+                android:icon="@drawable/ic_menu_contacto"
+                android:title="@string/menu_contacto" />
+            <item
+                android:id="@+id/nav_acercade"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_acercade" />
+        </menu>
+    </item>
+
+</menu>

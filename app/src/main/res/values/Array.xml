@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="plataformas">
+        <item>Nintendo Switch</item>
+        <item>Sony PS4</item>
+        <item>XBOX360</item>
+        <item>PC</item>
+        <item>Digital</item>
+    </string-array>
+
+</resources>

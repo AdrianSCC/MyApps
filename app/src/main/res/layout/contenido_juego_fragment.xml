@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.juegos.ContenidoJuego">
+
+    <ImageView
+        android:id="@+id/ivContenidoJuego"
+        android:layout_width="336dp"
+        android:layout_height="172dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="34dp"
+        android:src="@drawable/caratula" />
+
+    <EditText
+        android:id="@+id/etTituloContenidoJuego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivContenidoJuego"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="91dp"
+        android:layout_toEndOf="@+id/tvTituloContenidoJuego"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/spinnerPlataforma"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etTituloContenidoJuego"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="34dp"
+        android:layout_toEndOf="@+id/tvPlataformaContenidoJuego" />
+
+    <TextView
+        android:id="@+id/tvTituloContenidoJuego"
+        android:layout_width="61dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/ivContenidoJuego"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="99dp"
+        android:text="Titulo"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFechaContenidoJuego"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPlataformaContenidoJuego"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="29dp"
+        android:text="Fecha" />
+
+    <Button
+        android:id="@+id/btnFechaContenidoJuego"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerPlataforma"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/tvFechaResultadoContenidoJuego"
+        android:background="#00000000"
+        android:foreground="@drawable/ic_calendario" />
+
+    <TextView
+        android:id="@+id/tvPrecioContenidoJuego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFechaContenidoJuego"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="37dp"
+        android:text="Precio" />
+
+    <EditText
+        android:id="@+id/etPrecioJuegoContenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFechaContenidoJuego"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/tvPrecioContenidoJuego"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:numeric="decimal" />
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPrecioContenidoJuego"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="14dp"
+        android:layout_toStartOf="@+id/btnGuardar"
+        android:text="Actualizar" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPrecioJuegoContenido"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:text="Guardar" />
+
+    <TextView
+        android:id="@+id/tvPlataformaContenidoJuego"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTituloContenidoJuego"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="34dp"
+        android:text="Plataforma" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabContenidoJuegos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        app:backgroundTint="#D32F2F"
+        app:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+
+    <Button
+        android:id="@+id/btnFoto"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivContenidoJuego"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="33dp"
+        android:background="#00000000"
+        android:foreground="@drawable/ic_camera" />
+
+    <TextView
+        android:id="@+id/tvFechaResultadoContenidoJuego"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerPlataforma"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:layout_toEndOf="@+id/tvFechaContenidoJuego" />
+
+</RelativeLayout>

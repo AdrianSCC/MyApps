@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myrssadrian.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_noticias"
+        android:name="com.example.myrssadrian.ui.noticias.NoticiasFragment"
+        android:label="@string/menu_noticias"
+        tools:layout="@layout/fragment_noticias" />
+
+    <fragment
+        android:id="@+id/nav_juegos"
+        android:name="com.example.myrssadrian.ui.juegos.JuegosFragment"
+        android:label="@string/menu_juegos"
+        tools:layout="@layout/juegos_fragment" />
+
+    <fragment
+        android:id="@+id/nav_fotos"
+        android:name="com.example.myrssadrian.ui.Fotos.FotosFragment"
+        android:label="@string/menu_fotos"
+        tools:layout="@layout/fotos_fragment" />
+
+    <fragment
+        android:id="@+id/nav_musica"
+        android:name="com.example.myrssadrian.ui.Musica.MusicaFragment"
+        android:label="@string/menu_musica"
+        tools:layout="@layout/musica_fragment" />
+
+    <fragment
+        android:id="@+id/nav_video"
+        android:name="com.example.myrssadrian.ui.Video.VideoFragment"
+        android:label="@string/menu_video"
+        tools:layout="@layout/video_fragment" />
+
+    <fragment
+        android:id="@+id/nav_sensores"
+        android:name="com.example.myrssadrian.ui.Sensores.SensoresFragment"
+        android:label="@string/menu_sensores"
+        tools:layout="@layout/sensores_fragment" />
+
+
+    <fragment
+        android:id="@+id/nav_contacto"
+        android:name="com.example.myrssadrian.ui.contacto.ContactoFragment"
+        android:label="@string/menu_contacto"
+        tools:layout="@layout/fragment_contacto" />
+
+    <fragment
+        android:id="@+id/nav_acercade"
+        android:name="com.example.myrssadrian.ui.acercade.AcercadeFragment"
+        android:label="@string/menu_acercade"
+        tools:layout="@layout/fragment_acercade" />
+</navigation>

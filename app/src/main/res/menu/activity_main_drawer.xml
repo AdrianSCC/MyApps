@@ -32,6 +32,10 @@
             android:id="@+id/nav_sensores"
             android:icon="@drawable/ic_sensores"
             android:title="@string/menu_sensores" />
+        <item
+            android:id="@+id/nav_mapas"
+            android:icon="@drawable/ic_mapas"
+            android:title="@string/menu_mapas" />
     </group>
 
     <item android:title="Communicate">

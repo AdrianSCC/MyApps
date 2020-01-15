@@ -47,6 +47,12 @@
         android:label="@string/menu_sensores"
         tools:layout="@layout/sensores_fragment" />
 
+    <fragment
+        android:id="@+id/nav_mapas"
+        android:name="com.example.myrssadrian.ui.mapas.Mapas"
+        android:label="@string/menu_mapas"
+        tools:layout="@layout/mapas_fragment" />
+
 
     <fragment
         android:id="@+id/nav_contacto"

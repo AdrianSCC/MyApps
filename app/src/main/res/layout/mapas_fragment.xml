@@ -1,13 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.mapas.mapas">
+    tools:context=".ui.mapas.Mapas">
 
-    <TextView
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:id="@+id/tvTiempoRuta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Tiempo" />
+
+            <TextView
+                android:id="@+id/tvRecorridoRuta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Recorrido de la Ruta" />
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_gravity="bottom|end"
+            tools:context=".MapsActivity" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabStart"
+            android:layout_width="wrap_content"
+            android:layout_height="145dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="80dp"
+            android:clickable="true"
+            android:src="@drawable/ic_start" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMisRutas"
+            android:layout_width="wrap_content"
+            android:layout_height="145dp"
+            android:layout_gravity="bottom|start"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="80dp"
+            android:clickable="true"
+            android:src="@drawable/ic_abrir" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/listaRutasMapas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        />
 
 </FrameLayout>

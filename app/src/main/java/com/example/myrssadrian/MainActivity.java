@@ -35,12 +35,14 @@ public class MainActivity extends AppCompatActivity {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_noticias, R.id.nav_juegos,R.id.nav_fotos,R.id.nav_musica,R.id.nav_video,R.id.nav_sensores, R.id.nav_contacto, R.id.nav_acercade)
+                R.id.nav_home, R.id.nav_noticias, R.id.nav_juegos,R.id.nav_fotos,R.id.nav_musica,R.id.nav_video,R.id.nav_sensores,R.id.nav_mapas, R.id.nav_contacto, R.id.nav_acercade)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
     }
 
     @Override
@@ -76,6 +78,9 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+
+
 
     //controlamos la accion de volver atras
     @Override

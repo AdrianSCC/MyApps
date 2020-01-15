@@ -18,6 +18,7 @@
     <string name="menu_musica">Musica</string>
     <string name="menu_video">Video</string>
     <string name="menu_sensores">Sensores</string>
+    <string name="menu_mapas">Mapas</string>
 
     <string name="nombreApellidos">Adrián Sánchez-Cruzado Cerro</string>
     <string name="decripcionHome">Una App que engloba multitud de funciones que iremos añadiendo a lo largo del curso.</string>
@@ -32,4 +33,6 @@
     <string name="title_activity_splash_screen">SplashScreen</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="string_google_maps_key">AIzaSyDEHE2mlPAI6UdmWChbvYy60_1moW1BZ_4</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
